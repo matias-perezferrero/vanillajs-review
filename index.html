@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bot Builder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="header-h1-container">
+        <h1 id="header-h1">BATTLE BOT BUILDER</h1>
+      </div>
+    </header>
+
+    <section class="bot-builder-form-container">
+      <form class="bot-builder-form" id="bot-form">
+        <h3>Enter Your Bot Specifications</h3>
+        <label id="name-input-label" for="name-input">Bot Name:</label>
+        <input id="name-input" type="text" placeholder="Enter Bot Name" />
+        <label id="attack-input-label" for="attack-input">Attack Power:</label>
+        <input
+          id="attack-input"
+          type="number"
+          placeholder="Enter Attack Power"
+        />
+        <label id="hp-input-label" for="hp-input">Health Points:</label>
+        <input id="hp-input" placeholder="Enter Health Points" type="number" />
+        <button>Build Bot</button>
+      </form>
+    </section>
+
+    <section class="bot-display"></section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
