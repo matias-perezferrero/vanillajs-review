@@ -50,7 +50,11 @@ function createBot() {
 
 function removeBot(e) {
   console.log("hit removeBot function");
-  if (confirm("are you sure you want to delete bot")) {
+  if (
+    confirm(
+      "Are you sure you want to obliterate your bot? This action can never be undone."
+    )
+  ) {
     //because the delete button
     e.target.parentElement.remove();
   }
